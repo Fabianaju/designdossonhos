@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <!-- Link to Custom CSS Style Sheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Font Awesome Icons Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+
+    <!-- Link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Design dos Sonhos</title>
+</head>
+<body>
+    <canvas id="smokeCanvas"></canvas>
+    <div class="homeSection active">
+        <div class="navBar">
+            <div class="logo">
+                <h1>Design dos Sonhos</h1>
+            </div>
+            <ul class="navList">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </div>
+        <div class="banner">
+            <div class="info">
+                <h1>Bem-vindo ao <span class="highlight">Design dos Sonhos</span></h1>
+                <h2>Criando com paixão e estilo</h2>
+                <p>Transformando cada projeto em uma obra de arte única, com atenção aos mínimos detalhes e um toque pessoal.</p>
+                <div class="socialMedia">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="image">
+                <img src="image1.png" alt="Banner">
+            </div>
+        </div>
+    </div>
+
+    <div class="aboutSection" id="about">
+        <div class="container">
+            <div class="aboutImage">
+                <img src="aboutImage.jpg" alt="About Image">
+            </div>
+            <div class="aboutContent">
+                <h2>Sobre Mim</h2>
+                <p>Eu sou uma designer dedicada a criar projetos únicos e personalizados, refletindo a essência e o estilo de cada cliente. Com uma paixão por detalhes e um amor pela criatividade, transformo ideias em realidade, garantindo a satisfação e o encantamento em cada trabalho realizado.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="servicesSection" id="services">
+        <div class="container">
+            <h2>Serviços</h2>
+            <div class="serviceItem">
+                <i class="fas fa-heart"></i>
+                <h3>Design Gráfico</h3>
+                <p>Criação de identidades visuais, logotipos e materiais gráficos com um toque pessoal e artístico.</p>
+            </div>
+            <div class="serviceItem">
+                <i class="fas fa-camera"></i>
+                <h3>Fotografia</h3>
+                <p>Fotografia criativa e profissional para capturar momentos e criar imagens impactantes.</p>
+            </div>
+            <div class="serviceItem">
+                <i class="fas fa-paint-brush"></i>
+                <h3>Ilustração</h3>
+                <p>Ilustrações personalizadas e únicas, trazendo vida e cor aos projetos.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolioSection" id="portfolio">
+        <div class="container">
+            <h2>Portfólio</h2>
+            <div class="portfolioGrid">
+                <div class="portfolioItem">
+                    <img src="portfolio1.png" alt="Portfolio Item">
+                    <h3>Projeto 1</h3>
+                    <p>Descrição breve do projeto.</p>
+                </div>
+                <div class="portfolioItem">
+                    <img src="portfolio2.png" alt="Portfolio Item">
+                    <h3>Projeto 2</h3>
+                    <p>Descrição breve do projeto.</p>
+                </div>
+                <div class="portfolioItem">
+                    <img src="portfolio3.png" alt="Portfolio Item">
+                    <h3>Projeto 3</h3>
+                    <p>Descrição breve do projeto.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contactSection" id="contact">
+        <div class="container">
+            <h2>Contato</h2>
+            <form>
+                <div class="formGroup">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="formGroup">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="formGroup">
+                    <label for="phone">Telefone</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="formGroup">
+                    <label for="message">Mensagem</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footerLogo">
+            <h1>Design dos Sonhos</h1>
+        </div>
+        <div class="socialMedia">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+
+    <!-- Canvas for smoke effect -->
+    <script src="smokeEffect.js"></script>
+</body>
+</html>
